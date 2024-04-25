@@ -1,0 +1,164 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #585da1;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Para que esté por encima de otros elementos */
+    height: 80px; /* Definimos una altura para el encabezado */
+}
+
+header h1 {
+    font-size: 24px;
+    margin: 0; /* Eliminar el margen superior del h1 */
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center; /* Centrar los elementos de navegación */
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline-block; /* Mostrar en línea */
+}
+
+nav ul li {
+    display: inline; /* Mostrar en línea */
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+    margin-top: 100px; /* Espacio para el encabezado fijo */
+}
+
+/* Estilos para las secciones */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width: calc(100% - 160px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #585da1; /* Color corporativo */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para la galería */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.image-hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Transición de opacidad durante 0.5 segundos */
+}
+
+.image-visible {
+    opacity: 1;
+}
+
+
+footer {
+    background-color: #585da1; /* Color corporativo */
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .red-social {
+    width: 20px ;
+    height: 20px;
+    display: inline-block; /* Para que los iconos aparezcan en línea */
+    margin-right: 10px; /* Agregar un espacio entre los iconos */
+}
+
+footer .red-social:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último icono */
+}

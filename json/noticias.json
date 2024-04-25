@@ -1,0 +1,14 @@
+[
+    {
+        "titulo": "Nueva funcionalidad añadida a nuestro sitio web",
+        "descripcion": "Estamos emocionados de anunciar una nueva funcionalidad que hemos agregado a nuestro sitio web. ¡Descúbrela ahora!"
+    },
+    {
+        "titulo": "Evento de lanzamiento de producto",
+        "descripcion": "Te invitamos a nuestro evento de lanzamiento de producto el próximo sábado. ¡No te lo pierdas!"
+    },
+    {
+        "titulo": "Conferencia sobre tecnología",
+        "descripcion": "Participa en nuestra conferencia sobre las últimas tendencias tecnológicas. ¡Regístrate ahora!"
+    }
+]

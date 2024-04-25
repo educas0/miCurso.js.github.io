@@ -1,0 +1,130 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Valor altísimo */
+
+    background-color: #585da1;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+
+
+/* Estilos para el contenido principal */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Estilo básico para el Slider*/
+#gallery {
+
+    position: relative;
+    z-index: 1; /* Cambiado a un valor más bajo */
+
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+
+    display: flex; /* Usar flexbox para centrar las imágenes */
+    justify-content: center; /* Centrar horizontalmente las imágenes */
+    align-items: center; /* Centrar verticalmente las imágenes */
+    height: 100%; /* Ajustar la altura del contenedor según sea necesario */
+ }
+ 
+ .gallery-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+ }
+ 
+ .gallery-item {
+    min-width: 100%;
+    box-sizing: border-box;
+ }
+ 
+ .gallery-item img {
+    width: 100%;
+    display: block;
+
+   /* max-width: 100%;  Asegurar que las imágenes no excedan el ancho del contenedor */
+   /*  max-height: 100%; Asegurar que las imágenes no excedan la altura del contenedor */
+    
+ }
+ 
+ /* Navegación del Slider */
+ .gallery-navigation {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items:center ;
+    top: -50px;
+ }
+ 
+ .nav-button {
+    background-color: #585da1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ 
+ .prev-button {
+    order: 1; /* Cambiar el orden del botón anterior */
+}
+
+.next-button {
+    order: 3; /* Cambiar el orden del botón siguiente */
+}
+
+ .nav-button:hover {
+ background-color: #e0f7f4;
+ }
+
+
+ footer a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+footer .red-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20px ;
+    height: 20px; 
+}
+

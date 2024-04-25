@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+    <link rel="stylesheet" type="text/css" href="../css/presupuesto.css">
+    <link rel="stylesheet" href="../css/navigation.css"> <!--Para el estilo de navegación ;) -->
+</head>
+<body>
+    <header>
+        <img src="../images/Pelotas_Layout.png" alt="Layout de Pelotas">
+        <nav>
+            <ul>
+                <li><a href="../index.html" >Inicio</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="presupuesto.html" class="active">Presupuesto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>Solicitud de Presupuesto</h1>
+    <form id="presupuesto-form">
+        <!-- Datos de contacto -->
+        <h2>Datos de Contacto</h2>
+        <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <hr>
+        <!-- Opciones de presupuesto -->
+        <h2>Opciones de Presupuesto</h2>
+        <div>
+            <label for="producto">Producto:</label>
+            <select id="producto" name="producto" required>
+                <option value="" disabled selected hidden>Seleccionar producto...</option>
+                <option value="100">Pelota A - 100€</option>
+                <option value="150">Pelota B - 150€</option>
+                <option value="200">Pelota C - 200€</option>
+            </select>
+        </div>
+        <div>
+            <label for="plazo">Plazo (meses):</label>
+            <input type="number" id="plazo" name="plazo" min="1" required>
+        </div>
+        <div>
+            <label>Extras:</label>
+            <input type="checkbox" id="extra1" name="extras" value="50">
+            <label for="extra1">Extra 1 - 50€</label>
+            <input type="checkbox" id="extra2" name="extras" value="75">
+            <label for="extra2">Extra 2 - 75€</label>
+        </div>
+        <hr>
+        <!-- Aceptar Condiciones -->
+        <h2>Aceptar Condiciones</h2>
+        <div>
+            <label for="presupuesto">Presupuesto Total:</label>
+            <output id="presupuesto" name="presupuesto">0</output>
+        </div>
+        <!-- Condiciones y envío -->
+        <div>
+            <input type="checkbox" id="condiciones" name="condiciones" required>
+            <label for="condiciones">Acepto las condiciones de privacidad</label>
+        </div>
+        <div>
+            <button type="submit">Enviar Presupuesto</button>
+            <button type="reset">Limpiar Formulario</button>
+        </div>
+    </form>
+    <footer>
+        <div>
+            <a href="https://facebook.com"><img class="red-social" src="../images/facebook_logo.png" alt="Facebook" width="2048" height="2048"></a>
+            <a href="https://twitter.com"><img class="red-social" src="../images/x_logo.avif" alt="Twitter" width="570" height="570"></a>
+            <a href="https://www.oligofrenia.com/"><img class="red-social" src="../images/tiktok_logo.png" alt="Tiktok" width="512" height="512"></a>
+        </div>
+        <div>
+            <p>Calle Zigüeña 78, Villalpuerro</p>
+            <p>Aviso Legal</p>
+        </div>
+        <div>
+        </div>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+</body>
+</html>

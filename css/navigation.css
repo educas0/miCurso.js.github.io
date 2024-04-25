@@ -1,0 +1,71 @@
+/* Estilos de la barra de navegación */
+header {
+    background-color: #585da1; /* Color corporativo */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0; /* Posición en la parte superior */
+    width: 100%;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px; /* Espacio alrededor de los enlaces */
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #585da1;
+    padding: 10px;
+}
+
+nav a {
+    color: rgb(151, 190, 190);
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    background-color: #666;
+}
+
+nav a.active {
+    color: #585da1;
+    background-color: #e0f7f4; /* Color para resaltar la sección activa */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #585da1;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .red-social {
+    width: 20px ;
+    height: 20px; 
+}
+
+footer .red-social:last-child {
+    margin-right: 0; /* Eliminar el margen derecho del último icono */
+}
